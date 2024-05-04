@@ -1,16 +1,12 @@
-let primeiraNota=0
-let segundaNota= 0
-let terceiraNota= 0
-let media= 0
+let idade
 
-primeiraNota= prompt("digite sua primeira nota")
-segundaNota= prompt("digite sua segunda nota")
-terceiraNota= prompt("digite sua terceira nota")                 
+idade= parseInt(prompt("Digite sua idade"));
 
-primeiraNota= parseInt(primeiraNota)
-segundaNota= parseInt(segundaNota)
-terceiraNota= parseInt(terceiraNota)
+if(idade >= 18){
+    alert("Você é maior de idade")
+}
 
-media= (primeiraNota + segundaNota + terceiraNota) /3
- alert("sua média é: " + media)
+else{
+    alert("Você é menor de idade")
+}
 
