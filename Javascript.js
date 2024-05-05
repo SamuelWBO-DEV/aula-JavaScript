@@ -3,14 +3,25 @@ let segundaNota= 0
 let terceiraNota= 0
 let media= 0
 
-primeiraNota= prompt("digite sua primeira nota")
-segundaNota= prompt("digite sua segunda nota")
-terceiraNota= prompt("digite sua terceira nota")                 
+primeiraNota= parseInt( prompt("digite sua primeira nota") )
+segundaNota= parseInt( prompt("digite sua segunda nota"))
+terceiraNota= parseInt( prompt("digite sua terceira nota") )                
 
-primeiraNota= parseInt(primeiraNota)
-segundaNota= parseInt(segundaNota)
-terceiraNota= parseInt(terceiraNota)
+media=(primeiraNota + segundaNota + terceiraNota) /3
+media=parseInt(media)
+console.log(media)
 
-media= (primeiraNota + segundaNota + terceiraNota) /3
- alert("sua média é: " + media)
+if(media > 0 && media <= 5){
+    alert("Você foi aprovado")
+}
+
+if(media ==6){
+    alert("Você ficou em recuperação")
+}
+
+if(media >=7){
+    alert("Você foi aprovado")
+}
+
+
 
