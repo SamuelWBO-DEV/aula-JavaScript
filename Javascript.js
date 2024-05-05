@@ -1,27 +1,12 @@
-let primeiraNota=0
-let segundaNota= 0
-let terceiraNota= 0
-let media= 0
+let arrayLogin= ["usuário", "e-mail", "senha"]
 
-primeiraNota= parseInt( prompt("digite sua primeira nota") )
-segundaNota= parseInt( prompt("digite sua segunda nota"))
-terceiraNota= parseInt( prompt("digite sua terceira nota") )                
+alert("Crie sua conta")
+console.log(arrayLogin)
 
-media=(primeiraNota + segundaNota + terceiraNota) /3
-media=parseInt(media)
-console.log(media)
+arrayLogin.push (prompt("Digite seu nome de Usuário"))
+arrayLogin.push (prompt("Digite seu e-mail"))
+arrayLogin.push (prompt("Digite sua senha")) 
 
-if(media > 0 && media <= 5){
-    alert("Você foi aprovado")
-}
-
-if(media ==6){
-    alert("Você ficou em recuperação")
-}
-
-if(media >=7){
-    alert("Você foi aprovado")
-}
-
+console.log(arrayLogin)
 
 
