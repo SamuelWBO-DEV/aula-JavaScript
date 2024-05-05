@@ -1,12 +1,13 @@
-let arrayLogin= ["usuário", "e-mail", "senha"]
+let arrayFruits= ['Maçã', 'Banana', 'Laranja', 'Morango', 'Abacaxi', 'Uva', 'Melancia', 'Pera', 'Kiwi', 'Manga'];
+let numeroLista=0;
+console.log(arrayFruits);
 
-alert("Crie sua conta")
-console.log(arrayLogin)
+for (let index = 0; index < arrayFruits.length; index++) {
+    numeroLista++
+    console.log("Fruta "+ numeroLista + " = " + arrayFruits[index])
+}
 
-arrayLogin.push (prompt("Digite seu nome de Usuário"))
-arrayLogin.push (prompt("Digite seu e-mail"))
-arrayLogin.push (prompt("Digite sua senha")) 
 
-console.log(arrayLogin)
+
 
 
