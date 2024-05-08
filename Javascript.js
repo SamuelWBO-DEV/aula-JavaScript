@@ -1,10 +1,13 @@
-let arrayFruits= ['Maçã', 'Banana', 'Laranja', 'Morango', 'Abacaxi', 'Uva', 'Melancia', 'Pera', 'Kiwi', 'Manga'];
-let numeroLista=0;
-console.log(arrayFruits);
+function load (){
+    let Nascimento = document.getElementById("input")
 
-for (let index = 0; index < arrayFruits.length; index++) {
-    numeroLista++
-    console.log("Fruta "+ numeroLista + " = " + arrayFruits[index])
+    document.getElementById ("btn").onclick =function(){
+        let resultado = 2024 - parseInt (Nascimento.value)
+        document.getElementById("idade").innerText = resultado 
+    }
+}
+window.onload = function(){
+    load()
 }
 
 
