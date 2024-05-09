@@ -1,5 +1,81 @@
 body,html{
     margin: 0%;
     height: 100%;
-    transition: all ease 3s;
 }
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#containerInput{
+    width: 40%;
+    height: 80%;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+
+#containerInput h1{
+    font-size: 2.3rem;
+    text-align: center;
+    color:#e5e5e5 ;
+}
+
+    #containerInput input{
+        width: 70%;
+        padding: 15px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        background-color: #e5e5e5;
+        border-radius: 12px;
+        font-size: 1rem;
+    }
+
+    #btn{
+        width: 40% ;
+        height: 100%;
+        margin-top: 15px;
+        background-color: #e5e5e5;
+        border-radius: 12px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #f7f7f7;
+         background-color: #8f9391;
+         cursor: pointer;
+         transition: all 1s ;
+         border: none;
+         outline: none;
+    }
+
+    #btn:hover{
+        background-color: #3c3e3d;
+
+    }
+
+    #resultado{
+        color: #fff;
+        font-size: 3rem;
+         margin-top: 2rem;
+    }
+
+   #containerbtn{
+        width: 100%;
+        display: flex;
+        justify-content: center;  
+        align-items: center;
+        margin-top: 1rem; 
+    }
+
+    #operacoes{
+        margin-left: 35px;
+        font-size: 2rem;
+        margin-top: 10px;
+        background-color: #e5e5e5;
+        border-radius: 7px;
+    }
+

@@ -8,8 +8,23 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <input id="input" placeholder="Digite seu ano de nascimento" onkeyup="capturaDados(this)">
-    <button id="btn" onclick="alertbtn()">Pegar Nome</button>
-    <div id="idade"></div>
+    <main>
+    <div id="containerInput">
+        <h1>Calculadora</h1>
+        <input id="input1" placeholder="Digite um número">
+        <input id="input2" placeholder="Digite um número">
+        <div id="containerbtn"> 
+            <button onclick="calculadora()" id="btn" >Calcular</button>
+            <select  id="operacoes">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        </div>
+        <div id="resultado">0</div>
+    </div>
+    </main>
+    
 </body>
 </html>
