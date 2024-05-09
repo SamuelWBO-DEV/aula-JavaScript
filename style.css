@@ -1,0 +1,114 @@
+
+body,html{
+    margin:0%;
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(125deg, rgba(0,0,0,1) 0%, rgba(55,58,0,0.7988445378151261)100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    width: 45%;
+    height: 75%;
+    border: #e0e011 solid 1px;
+}
+
+
+
+#container h1{
+    text-align: center;
+    font-family:system-ui ;
+    color: #e0e011;
+    font-size: 2.5rem;
+}
+
+#nota{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+#nota input{
+    width: 12rem;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: #b1b1b1;
+    color: #444443;
+    font-weight: 600;
+}
+
+#nota label{
+    color: #e0e011;
+    font-size: 1.3rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+#orgContainer1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#orgContainer2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#alinhandoOrg{
+    display: flex;
+}
+
+#containerBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn{margin-top: 3rem;
+    width: 10rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #e0e011;
+    color: #565656;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+#btn:hover{
+    background-color: #b6b604;
+}
+
+#Resultado{
+    margin-top: 1.5rem;
+    color: #e0e011;
+    font-size: 2.2rem;
+    font-family: cursive;
+    font-weight: 600;
+}
+
+#media{
+    margin-top: 1.5rem;
+    color: #e0e011;
+    font-size: 2.2rem;
+    font-family: cursive;
+    font-weight: 600;
+}
+
+
+

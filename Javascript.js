@@ -1,27 +1,35 @@
-let primeiraNota=0
-let segundaNota= 0
-let terceiraNota= 0
-let media= 0
+function media() {
+let exibirMedia= document.getElementById("media");
+let media= 0;
+let resultado = document.getElementById("Resultado");
+let primeiraNota =parseInt( document.getElementById("Valor1").value);
+let segundaNota= parseInt(document.getElementById("Valor2").value); 
+let terceiraNota=parseInt(document.getElementById("Valor3").value); 
+let quartaNota=parseInt(document.getElementById("Valor4").value);
 
-primeiraNota= parseInt( prompt("digite sua primeira nota") )
-segundaNota= parseInt( prompt("digite sua segunda nota"))
-terceiraNota= parseInt( prompt("digite sua terceira nota") )                
+media=Math.round((primeiraNota + segundaNota + terceiraNota + quartaNota ) /4)
 
-media=(primeiraNota + segundaNota + terceiraNota) /3
-media=parseInt(media)
+if(media >= 7){
+    resultado.innerText= "Você foi APROVADO!!!"
+    resultado.style.color= "#529825"
+    exibirMedia.innerText= "Sua média é " + media
+}
+
+if (media <= 4) {
+    resultado.innerText= "Você foi REPROVADO =("
+    resultado.style.color= "#fD1010"
+    exibirMedia.innerText= "Sua média é " + media
+}
+
+if (media > 4 && media < 7) {
+    resultado.innerText= "Você ficou de RECUPERAÇÃO"
+    resultado.style.color= "#FF9806"
+    exibirMedia.innerText= "Sua média é " + media
+}
+
 console.log(media)
-
-if(media > 0 && media <= 5){
-    alert("Você foi aprovado")
 }
 
-if(media ==6){
-    alert("Você ficou em recuperação")
-}
-
-if(media >=7){
-    alert("Você foi aprovado")
-}
 
 
 
