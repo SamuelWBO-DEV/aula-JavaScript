@@ -1,11 +1,24 @@
 function armazenar() {
-    let classInput = document.getElementsByClassName("input");
-    let dado=0;
-    for (let index = 0; index < classInput.length; index++) {
-        dado++
-       console.log("Dado " + dado + "= " + classInput[index].value)
-    }
+    const InputNome = document.querySelector("#input").value;
+    //document.body.innerHTML +=`<div class="nome">${InputNome}</div>`
+    const divIsnerir = document.createElement("div");
+    divIsnerir.className = "nome";
+    divIsnerir.innerText = InputNome;
+    document.querySelector("#container").appendChild(divIsnerir)
 }
+
+function salvarListagem() {
+    const dadosListagem = document.querySelector("#container").innerHTML;
+    localStorage.setItem("nomesListagem", dadosListagem);
+}
+
+function DadosSalvos() {
+    document.querySelector("#container").innerHTML= localStorage.getItem("nomesListagem")
+}
+
+window.addEventListener("load",()=>{
+    DadosSalvos()
+})
 
 
 
