@@ -1,26 +1,20 @@
-function armazenar() {
-    const InputNome = document.querySelector("#input").value;
-    //document.body.innerHTML +=`<div class="nome">${InputNome}</div>`
-    const divIsnerir = document.createElement("div");
-    divIsnerir.className = "nome";
-    divIsnerir.innerText = InputNome;
-    document.querySelector("#container").appendChild(divIsnerir)
+function inserirNome() {
+    const inputNome = document.querySelector("input").value;
+    const divInseri = document.createElement("div");
+    divInseri.className = "nome";
+    divInseri.innerText = inputNome;
+    document.querySelector("#container").appendChild(divInseri)
 }
 
-function salvarListagem() {
-    const dadosListagem = document.querySelector("#container").innerHTML;
-    localStorage.setItem("nomesListagem", dadosListagem);
+function armazenNomes() {
+    const dadosSalvos =  document.querySelector("#container").innerHTML;
+    localStorage.setItem("nomes-salvos", dadosSalvos);
 }
 
-function DadosSalvos() {
-    document.querySelector("#container").innerHTML= localStorage.getItem("nomesListagem")
+function armazenCarregamento() {
+    document.querySelector("#container").innerHTML = localStorage.getItem("nomes-salvos")
 }
 
-window.addEventListener("load",()=>{
-    DadosSalvos()
-})
-
-
-
-
-
+    window.addEventListener("load", ()=>{
+        armazenCarregamento()
+    })
