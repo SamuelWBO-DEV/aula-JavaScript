@@ -1,20 +1,8 @@
-function inserirNome() {
-    const inputNome = document.querySelector("input").value;
-    const divInseri = document.createElement("div");
-    divInseri.className = "nome";
-    divInseri.innerText = inputNome;
-    document.querySelector("#container").appendChild(divInseri)
+function Data() {
+    const today = new Date();
+    let dia = today.getDate().toString().padStart("2","0");
+    let mes = today.getMonth().toString().padStart("2","0");
+    let ano = today.getFullYear();
+    document.querySelector("#inserirData").innerText=(today.toLocaleDateString());
+    
 }
-
-function armazenNomes() {
-    const dadosSalvos =  document.querySelector("#container").innerHTML;
-    localStorage.setItem("nomes-salvos", dadosSalvos);
-}
-
-function armazenCarregamento() {
-    document.querySelector("#container").innerHTML = localStorage.getItem("nomes-salvos")
-}
-
-    window.addEventListener("load", ()=>{
-        armazenCarregamento()
-    })
