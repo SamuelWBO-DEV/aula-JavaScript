@@ -6,17 +6,35 @@
     <title>JavaScript</title>
     <script src="./Javascript.js" type="text/javascript"></script>
     <style>
-    .nome{margin-top: 2rem;
-    font-size: 1.5rem;
+   body,html{
+    margin: 0%;
+    height: 100%;
+  }
+  main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #container{
+    width: 400px;
+    height: 600px;
+    
+  }
+
+  .nome{
+    font-size: 1.3rem;
     font-family: sans-serif;
-    font-weight: 600;
-    color: #2eb13d;}
+    color: #1e1e1e;
+  }
     </style>
 </head>
 <body>
-  <input id="input" placeholder="Insira seu nome" type="text">
-  <button onclick="inserirNome()">Inserir</button>
-  <button onclick="armazenNomes()">Salvar Listagem</button>
-  <div id="container"></div>
+  <main>
+    <div id="container">
+    </div>
+  </main>
 </body>
 </html>
